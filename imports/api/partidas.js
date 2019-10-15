@@ -3,6 +3,7 @@ import { Meteor } from "meteor/meteor";
 
 export const Partidas = new Mongo.Collection("games");
 
+//Hace falta documentacion de funciones
 if (Meteor.isServer) {
 	Meteor.publish("myGame", (id1) => {
 		return Partidas.find({ _id: id1 });
