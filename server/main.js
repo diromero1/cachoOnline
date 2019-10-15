@@ -3,6 +3,7 @@ import { Accounts } from "meteor/accounts-base";
 import '../imports/api/partidas.js';
 import '../imports/api/board.js';
 
+//Hace falta documentación de funciones
 Meteor.methods({
   crearUsuario: function (user, nombre, password) {
     Accounts.createUser({
