@@ -3,6 +3,7 @@ import { Meteor } from "meteor/meteor";
 
 export const Board = new Mongo.Collection("board");
 
+//Hace falta documentación de cada función
 if (Meteor.isServer) {
 	Meteor.publish("theBoard", () => {
 		return Board.find();
